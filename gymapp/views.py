@@ -12,12 +12,14 @@ def contact(request):
         user_message = request.POST['user_message']
         
         send_mail(
-            user_name,
-            user_message,
-            user_email
-            ['temitopeayobami995@gmail.com'],
-            
+            'message from ' + user_name, #Subject
+            user_message, # message
+            #subject, # subject
+            user_email, # from email
+           ['temitopeayobami995@gmail.com'], # to email
         )
+            
+        
         
         return render(request, 'apps/contact.html', {'user_name':user_name})
     else:
