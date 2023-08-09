@@ -24,4 +24,16 @@ def contact(request):
         return render(request, 'apps/contact.html', {'user_name':user_name})
     else:
         return render(request, 'apps/contact.html', {})
+    
+def about(request):
+    return render(request, 'apps/about.html', {})
+
+def trainer(request):
+    return render(request, 'apps/trainer.html', {})
+
+def courses(request):
+    return render(request, 'apps/courses.html', {})
+
+def service(request):
+    return render(request, 'apps/service.html', {})
         
