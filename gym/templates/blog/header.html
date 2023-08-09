@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 
 <!--
@@ -22,20 +24,20 @@
   <title>GymFit| Fitness template</title>
 
   <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static '/plugins/bootstrap/css/bootstrap.min.css' %}">
   <!-- Icofont Css -->
-  <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
+  <link rel="stylesheet" href="{% static '/plugins/icofont/icofont.min.css' %}">
   <!-- Themify Css -->
-  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+  <link rel="stylesheet" href="{% static '/plugins/themify/css/themify-icons.css' %}">
   <!-- animate.css -->
-  <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <link rel="stylesheet" href="{% static '/plugins/animate-css/animate.css' %}">
   <!-- Magnify Popup -->
-  <link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
+  <link rel="stylesheet" href="{% static '/plugins/magnific-popup/dist/magnific-popup.css' %}">
   <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="{% static '/plugins/slick-carousel/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static '/plugins/slick-carousel/slick/slick-theme.css' %}">
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{% static '/css/style.css' %}">
 
 </head>
 <body>
@@ -55,7 +57,7 @@
 		<div class="collapse text-center navbar-collapse" id="navbarsid">
 			<ul class="navbar-nav mx-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
