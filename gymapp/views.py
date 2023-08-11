@@ -12,11 +12,10 @@ def contact(request):
         user_message = request.POST['user_message']
         
         send_mail(
-            'message from ' + user_name, #Subject
-            user_message, # message
-            #subject, # subject
-            user_email, # from email
-           ['temitopeayobami995@gmail.com'], # to email
+            user_name, # subject
+			user_message, # message
+			user_email, # from email
+			['temitopeayobami995@gmail.com'], # To Email
         )
             
         
