@@ -117,3 +117,5 @@ dmypy.json
 
 # pytype static type analyzer
 .pytype/
+
+db.sqlite3
